@@ -7,12 +7,12 @@ let products = [
     {name: "Notebook", price: 5, category: "Stationery"}
 ]
 
-// //Create function that filters products based on category
-// function getProductsByCategory(products, category) {
-//     return products.filter(product => product.category == category);
-// }
+//Create function that filters products based on category
+function getProductsByCategory(products, category) {
+    return products.filter(product => product.category == category);
+}
 
-// console.log(getProductsByCategory(products, "Electronics"));
+console.log(getProductsByCategory(products, "Electronics"));
 
 // TASK 2: ARRAY METHODS - APPLYING DISCOUNT TO PRODUCTS
 function applyDiscount(products, discountRate) {
@@ -24,7 +24,7 @@ function applyDiscount(products, discountRate) {
     ))
 }
 
-// console.log(applyDiscount(products, 0.1));
+console.log(applyDiscount(products, 0.1));
 
 // Task 3
 
@@ -35,4 +35,17 @@ function calculateTotalRevenue(sales) {
 }
 
 console.log(`Total Rev. 2024: $${calculateTotalRevenue(sales)}`)
+
+// Task 4
+let employee = {
+    name: "John Doe",
+    salary: 50000,
+    position: "Manager"
+};
+
+function updateSalary(employee, percentageIncrease) {
+    return employee.salary += employee.salary * percentageIncrease
+}
+
+console.log(updateSalary(employee, 0.1));
 
